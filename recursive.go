@@ -11,10 +11,8 @@ func recCalculate(wantResult, currentValue, stepsCount int) (int, int) {
 	if wantResult <= currentValue {
 		return currentValue, stepsCount
 	}
-	currentValue1 := currentValue + 1
-	currentValue2 := currentValue * currentValue
 
-	currentValue = max(currentValue1, currentValue2)
+	currentValue = max(currentValue+1, currentValue*currentValue)
 	stepsCount++
 	return recCalculate(wantResult, currentValue, stepsCount)
 }

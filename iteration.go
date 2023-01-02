@@ -11,9 +11,7 @@ func iteration(wantResult int) int {
 }
 
 func calculate(currentValue int) int {
-	sum := currentValue + 1
-	sqr := currentValue * currentValue
-	return max(sum, sqr)
+	return max(currentValue+1, currentValue*currentValue)
 }
 
 func max(val1, val2 int) int {
