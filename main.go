@@ -7,5 +7,6 @@ func main() {
 	fmt.Println("Enter want result:")
 	fmt.Scanf("%d\n", &wantResult)
 	fmt.Printf("iteration metod stepsCount: %d\n", iteration(wantResult))
-	fmt.Printf("recursive metod stepsCount: %d\n", recursive(wantResult))
+	_, stepsCount := recursive(wantResult, 0, 0)
+	fmt.Printf("recursive metod stepsCount: %d\n", stepsCount)
 }
